@@ -13,11 +13,12 @@
 <Presentation>	
 	<script>
 		// information about this presentation 
-		const author = "Anran Wang"; 
-		const title = "This Is My Own Title";
-		const subtitle = "And here is my subtitle";
-		const department = "Department of Informatics"; 
-		const university = "Technical University of Munich"; 
+		const author = "Stephan Leible, Maren Gierlich-Joas, Tilo Böhmann,<br> Christian Schuler, Dominik Hauser, Hannes Klingler"; 
+		const authorShort = "Leible, Gierlich-Joas, Böhmann, Schuler, Hauser, Klingler"; 
+		const title = "Data-driven Digital Innovation Lab";
+		const subtitle = "Digital and Data Literacy in Teaching Lab";
+		const department = "Mathematik, Naturwissenachaften und Informatik (MIN)"; 
+		const university = "University of Hamburg"; 
 		var currentChapterName="";
 		var currentChapterNumber=0;
 		var chapterNames=[];
@@ -77,7 +78,7 @@
 		</script>
 	</Layout></Slide>
 	<!-- TOC -->
-	<Slide>
+	<!-- <Slide>
 		<script>
 			toc=true; // decides whether to generate table of content page
 		</script>
@@ -87,23 +88,23 @@
 				<chpnames class="text-left"> </chpnames>
 			</toc>
 		</Layout>
-	</Slide>
+	</Slide> -->
 	
 	<!-- intro -->
-	<script>newChapter("Introduction")</script>
+	<script>newChapter("Data-driven Digital Innovation Lab ")</script>
 	<Slide><Layout>
-		<titlebar > On how to use these Presentation Slides  </titlebar>
+		<titlebar > Data-driven Digital Innovation Lab  </titlebar>
 		<mybody>
 			<ul class="a">
-				<li>Press F to enter full screen.</li>
-				<ul class="b"> 
-					<li>To better check the layout.</li>
-				</ul>
+				<li>The Data-driven Digital Innovation Lab project<br> is an initiative to further student's data literacy.</li>
 				<br>
-				<li>Press fn+s to enter presenter mode.</li>
+				<li>This project ran 12 months from early 2023 until spring of 2024,<br> with a number of results, some are:</li>
 				<ul class="b"> 
-					<li>Where you can see the next slide.</li>
-					<li>And read your notes for each slide.</li>
+					<li>A seminar called "Zukunftsfelder der Digitalisierung: Datengetriebene Digitale Innovationen und Generative KI"</li>
+					<li>A Wiki regarding the data life cycle and how to manage it</li>
+					<li>A teaching concept presented at the TURN-2024</li>
+					<li>An idea management tool to foster co-creation approaches</li>
+					<li>A Design-Workshop presented on the following slides</li>
 				</ul>
 			</ul>
 		</mybody>
@@ -115,186 +116,68 @@
 
 	
 
-	<script>newChapter("Text");</script>
+	<script>newChapter("Kokreation Explorationsraum Workshop");</script>
 	<Slide><Layout>
-		<titlebar > Simple Text </titlebar>
+		<titlebar > Co-Creation Workshop Designing a Exploration-Lab </titlebar>
 		<mybody>
-			<div class="flex h-full items-center justify-center gap-[100px]">
-				You can add text, and different media files such as<br> 
-				images, pdfs, videos to your presentation slides.<br>
-				The following slides showcase some of these applications<br> 
-				for easy reproduction.
-			</div>
-		</mybody>
-	</Layout></Slide>
-
-	<Slide><Layout>
-		<titlebar > A List of Text Items </titlebar>
-		<mybody>
-			<ul class="a" >
-				<li>The First Text Item.</li>
+			<ul class="a">
+				<li>First, students were introduced to a 3D-room planner software.</li>
+				<br>
+				<li>Next, the students (in groups of each 2-3):</li>
 				<ul class="b"> 
-					<li>The 1. Sub-Item.</li>
+					<li>designed an exploration-lab room,</li>
+					<li>documented their process and decisions,</li>
+					<li>and presented their results.</li>
 				</ul>
 				<br>
-				<li>The Second Text Item.</li>
-				<ul class="b"> 
-					<li>The 2. Sub-Item.</li>
-					<ul class="c"> 
-						<li>Sub-Sub-Item a.</li>
-						<li>Sub-Sub-Item b.</li>
-					</ul>
-					<li>The 3. Sub-Item.</li>
-				</ul>
+				<li>Each presentation was followed by a short round of feedback and discussion.</li>
 				<br>
-				<li>The Third Text Item.</li>
-				<ul class="b"> 
-					<li>The 4. Sub-Item.</li>
-				</ul>
+				<li>These designs serve as basis for creating rooms in which students find a place to work and study- in groups or alone.</li>
 			</ul>
 		</mybody>
-	</Layout>
-	<Notes>
-		These are some presenter notes that can help during the actual presentation.<br>
-		They are displayed on the presenter's screen if "presenter mode" has been entered.
-	</Notes></Slide>
+	</Layout></Slide>
 
-	<script> newChapter("Images"); </script>
+	<script>newChapter("Student-Made Lab Designs");</script>
 	<Slide><Layout>
-		<titlebar > An Image with a Caption </titlebar>
+		<titlebar > Lab Design #1 </titlebar>
 		<mybody>
-			<figure>
-				<img src="tum-logo.svg" alt="tumlogo" class="mx-auto my-[2vh]">
-				<figcaption> This is an example figure with caption. </figcaption>
-			</figure>
+			<img src="design-01.gif" alt="Lab Design Gif" class="w-[75vw] h-[88vh] mx-auto my-auto p-2" />
 		</mybody>
 	</Layout></Slide>
 
 	<Slide><Layout>
-		<titlebar > Here is a grid of images </titlebar>
-		<mybody>			
-			<div class="grid mt-[10vh] mx-[10vh]" style="grid-template-columns: auto auto auto;">
-				<img src="tum-logo.svg" alt="tumlogo" class="h-[40vh] px-[5vh]">
-				<img src="tum-logo.svg" alt="tumlogo" class="h-[40vh] px-[5vh]">
-				<img src="tum-logo.svg" alt="tumlogo" class="h-[40vh] px-[5vh]">
-				<img src="tum-logo.svg" alt="tumlogo" class="h-[40vh] px-[5vh]">
-				<img src="tum-logo.svg" alt="tumlogo" class="h-[40vh] px-[5vh]">
-				<img src="tum-logo.svg" alt="tumlogo" class="h-[40vh] px-[5vh]">
-			</div>
-		</mybody>
-	</Layout></Slide>
-
-	<script> newChapter("PDFs"); </script>
-	<Slide><Layout>
-		<titlebar > Another PDF File as part of the Slide Deck </titlebar>
-		<mybody>			
-			<div class="h-[75vh] w-[90vw] mx-auto my-auto">
-				<iframe src="media-sample.pdf#page=1&zoom=100" frameBorder="0" scrolling="auto" height="100%" width="100%" title="ESSV Publication"></iframe>
-			</div>
-		</mybody>
-	</Layout></Slide>
-
-	<script> newChapter("Videos"); </script>
-	<Slide><Layout>
-		<titlebar > Single Video with multiple available Captions </titlebar>
+		<titlebar > Lab Design #2 </titlebar>
 		<mybody>
-			<figure>
-				<video controls class="w-[50vw] h-[44vh] mx-auto my-auto p-2">
-					<source src="media-never_gonna_give_you_up-video_medium-43_51.mp4" type="video/mp4" />
-					<track kind="captions" label="English" srclang="eng" src="media-video-captions-eng.vtt"/>
-					<track kind="captions" label="German" srclang="deu" src="media-video-captions-deu.vtt"/>
-					<track kind="captions" label="Chinese" srclang="zho" src="media-video-captions-zho.vtt" default/>
-					<track kind="captions" label="Chinese Pinyin" srclang="zho" src="media-video-captions-zhopinyin.vtt"/>
-				</video>
-				<figcaption> Play a video file from the repository.<br> </figcaption>
-			</figure>
+			<img src="design-02.gif" alt="Lab Design Gif" class="w-[75vw] h-[88vh] mx-auto my-auto p-2" />
 		</mybody>
 	</Layout></Slide>
 
 	<Slide><Layout>
-		<titlebar > Multiple Videos on the same Slide </titlebar>
+		<titlebar > Lab Design #3 </titlebar>
 		<mybody>
-			<figure>
-				<video controls class="w-[50vw] h-[44vh] mx-auto my-auto p-2" loop>
-					<source src="media-never_gonna_give_you_up-video_medium-43_51.mp4" type="video/mp4" />
-					<track kind="captions" label="English" srclang="eng" src="media-video-captions-eng.vtt"/>
-					<track kind="captions" label="German" srclang="deu" src="media-video-captions-deu.vtt"/>
-					<track kind="captions" label="Chinese" srclang="zho" src="media-video-captions-zho.vtt" default/>
-					<track kind="captions" label="Chinese Pinyin" srclang="zho" src="media-video-captions-zhopinyin.vtt"/>
-				</video>
-				<figcaption> Video that loops.<br>Default caption: Chinese. </figcaption>
-			</figure>
-
-			<figure>
-				<video controls class="w-[50vw] h-[44vh] mx-auto my-auto p-2">
-					<source src="media-never_gonna_give_you_up-video_medium-43_51.mp4" type="video/mp4" />
-					<track kind="captions" label="English" srclang="eng" src="media-video-captions-eng.vtt" default/>
-					<track kind="captions" label="German" srclang="deu" src="media-video-captions-deu.vtt"/>
-					<track kind="captions" label="Chinese" srclang="zho" src="media-video-captions-zho.vtt"/>
-					<track kind="captions" label="Chinese Pinyin" srclang="zho" src="media-video-captions-zhopinyin.vtt"/>
-				</video>
-				<figcaption> Video without looping.<br>Default caption: English. </figcaption>
-			</figure>
+			<img src="design-03.gif" alt="Lab Design Gif" class="w-[75vw] h-[88vh] mx-auto my-auto p-2" />
 		</mybody>
 	</Layout></Slide>
 
 	<Slide><Layout>
-		<titlebar > Multiple Videos in a Grid </titlebar>
+		<titlebar > Lab Design #4 </titlebar>
 		<mybody>
-			<div class="grid mx-auto my-auto" style="grid-template-columns: auto auto;">
-				<figure>
-					<video controls class="w-[50vw] h-[40vh] mx-auto my-auto p-2" loop>
-						<source src="media-never_gonna_give_you_up-video_medium-00_06.mp4" type="video/mp4" />
-						<track kind="captions" label="English" srclang="eng" src="media-video-captions-eng.vtt" default/>
-						<track kind="captions" label="German" srclang="deu" src="media-video-captions-deu.vtt"/>
-						<track kind="captions" label="Chinese" srclang="zho" src="media-video-captions-zho.vtt"/>
-						<track kind="captions" label="Chinese Pinyin" srclang="zho" src="media-video-captions-zhopinyin.vtt"/>
-					</video>
-					<figcaption class="text-[2vh]"> Video with default caption: English. </figcaption>
-				</figure>
-	
-				<figure>
-					<video controls class="w-[50vw] h-[40vh] mx-auto my-auto p-2" loop>
-						<source src="media-never_gonna_give_you_up-video_medium-06_12.mp4" type="video/mp4" />
-						<track kind="captions" label="English" srclang="eng" src="media-video-captions-eng.vtt"/>
-						<track kind="captions" label="German" srclang="deu" src="media-video-captions-deu.vtt" default/>
-						<track kind="captions" label="Chinese" srclang="zho" src="media-video-captions-zho.vtt"/>
-						<track kind="captions" label="Chinese Pinyin" srclang="zho" src="media-video-captions-zhopinyin.vtt"/>
-					</video>
-					<figcaption class="text-[2vh]"> Video with default caption: German. </figcaption>
-				</figure>
-	
-				<figure>
-					<video controls class="w-[50vw] h-[40vh] mx-auto my-auto p-2" loop>
-						<source src="media-never_gonna_give_you_up-video_medium-12_18.mp4" type="video/mp4" />
-						<track kind="captions" label="English" srclang="eng" src="media-video-captions-eng.vtt"/>
-						<track kind="captions" label="German" srclang="deu" src="media-video-captions-deu.vtt"/>
-						<track kind="captions" label="Chinese" srclang="zho" src="media-video-captions-zho.vtt" default/>
-						<track kind="captions" label="Chinese Pinyin" srclang="zho" src="media-video-captions-zhopinyin.vtt"/>
-					</video>
-					<figcaption class="text-[2vh]"> Video with default caption: Chinese. </figcaption>
-				</figure>
-	
-				<figure>
-					<video controls class="w-[50vw] h-[40vh] mx-auto my-auto p-2" loop>
-						<source src="media-never_gonna_give_you_up-video_medium-18_24.mp4" type="video/mp4" />
-						<track kind="captions" label="English" srclang="eng" src="media-video-captions-eng.vtt"/>
-						<track kind="captions" label="German" srclang="deu" src="media-video-captions-deu.vtt"/>
-						<track kind="captions" label="Chinese" srclang="zho" src="media-video-captions-zho.vtt"/>
-						<track kind="captions" label="Chinese Pinyin" srclang="zho" src="media-video-captions-zhopinyin.vtt" default/>
-					</video>
-					<figcaption class="text-[2vh]"> Video with default caption: Chinese Pinyin. </figcaption>
-				</figure>
-			</div>
+			<img src="design-04.gif" alt="Lab Design Gif" class="w-[75vw] h-[88vh] mx-auto my-auto p-2" />
 		</mybody>
 	</Layout></Slide>
 
-	<script> newChapter("To wrap it up"); </script>
 	<Slide><Layout>
-		<titlebar > Here is the title for this slide </titlebar>
-		<div class="flex h-full items-center justify-center gap-[100px]">
-			This template is still work on progress. 
-		</div>
+		<titlebar > Lab Design #5 </titlebar>
+		<mybody>
+			<img src="design-05.gif" alt="Lab Design Gif" class="w-[75vw] h-[88vh] mx-auto my-auto p-2" />
+		</mybody>
+	</Layout></Slide>
+
+	<Slide><Layout>
+		<titlebar > Lab Design #6 </titlebar>
+		<mybody>
+			<img src="design-06.gif" alt="Lab Design Gif" class="w-[75vw] h-[88vh] mx-auto my-auto p-2" />
+		</mybody>
 	</Layout></Slide>
 
 
@@ -307,7 +190,7 @@
 			// one section, one slide
 			document.getElementsByTagName('section')[i].setAttribute("id", "slide-"+(i+1));
 			// add author name 
-			document.getElementsByTagName('author')[i].innerText=author;
+			document.getElementsByTagName('author')[i].innerText=authorShort;
 			// add title 
 			document.getElementsByTagName('mytitle')[i].innerHTML="<a href=\"#slide-1\">"+title+"</a>";
 			// show slide number with total slide number
